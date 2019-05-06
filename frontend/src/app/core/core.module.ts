@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 
-import { AuthModule } from './auth/auth.module';
 import { HeaderComponent } from './header/header.component';
 import { DashboardModule } from '../dashboard/dashboard.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -10,10 +10,10 @@ import { DashboardModule } from '../dashboard/dashboard.module';
   ],
   imports: [
     DashboardModule,
-    AuthModule,
+    RouterModule,
   ],
   exports: [
     HeaderComponent,
-  ]
+  ],
 })
 export class CoreModule { }

@@ -12,6 +12,14 @@ const routes: Routes = [
   {
     path: 'dashboard', component: DashboardComponent
   },
+  {
+    path: 'login',
+    loadChildren: 'src/app/auth/login/login.module#LoginModule'
+  },
+  {
+    path: 'registration',
+    loadChildren: 'src/app/auth/registration/registration.module#RegistrationModule'
+  }
 ];
 
 @NgModule({
