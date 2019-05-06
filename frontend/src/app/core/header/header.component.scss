@@ -1,0 +1,27 @@
+@import "../../../assets/scss/helpers/mixins.scss";
+@import "../../../assets/scss/helpers/colors.scss";
+
+// General Styles
+.header-wrap {
+    @include flex(space-between);
+    width: 100%;
+    padding: 1rem;
+    background: $black;
+}
+
+// Authorization Block
+.authorization {
+    @include flex(center);
+    align-items: center;
+    color: $white;
+}
+
+.register-link, .login-link {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
